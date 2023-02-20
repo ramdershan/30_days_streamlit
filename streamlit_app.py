@@ -95,13 +95,24 @@ from datetime import time, datetime
 
 # st.write('Start time:', start_time)
 
-##Day 9
+## Day 9
 
-st.header('Line Chart')
+# st.header('Line Chart')
 
-chart_data = pd.DataFrame(
-               np.random.randn(20,3),
-               columns = ['a', 'b', 'c']
+# chart_data = pd.DataFrame(
+#                np.random.randn(20,3),
+#                columns = ['a', 'b', 'c']
+# )
+
+# st.line_chart(chart_data)
+
+## Day 10
+
+st.header('st.selectbox')
+
+option = st.selectbox(
+     'What is your favourite colour?',
+     ('Blue', 'Red', 'Green')
 )
 
-st.line_chart(chart_data)
+st.write('Your favourite colour is ', option)
