@@ -108,11 +108,23 @@ from datetime import time, datetime
 
 ## Day 10
 
-st.header('st.selectbox')
+# st.header('st.selectbox')
 
-option = st.selectbox(
-     'What is your favourite colour?',
-     ('Blue', 'Red', 'Green')
+# option = st.selectbox(
+#      'What is your favourite colour?',
+#      ('Blue', 'Red', 'Green')
+# )
+
+# st.write('Your favourite colour is ', option)
+
+## Day 11
+
+st.header('st.multiselect')
+
+options = st.multiselect(
+     "What are your favourite colours",
+     ['Green', 'Yellow', 'Red', 'Blue'],
+     ['Yellow', 'Red']
 )
 
-st.write('Your favourite colour is ', option)
+st.write('You selected:', options)
